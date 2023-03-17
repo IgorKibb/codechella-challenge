@@ -1,0 +1,41 @@
+/*roots*/
+@import url("/assents/css/roots/cabecalho.css");
+@import url("/assents/css/roots/banner.css");
+@import url("/assents/css/roots/footer.css");
+
+/*paginaPrincipal*/
+@import url("/assents/css/paginaPrincipal/datas.css");
+
+/*aExperiencia*/
+@import url("/assents/css/aExperiencia/descricao.css");
+
+/*setores*/
+@import url("/assents/css/setores/setores.css");
+
+/*informacoes*/
+@import url("/assents/css/informacoes/informacoes.css");
+
+/*ingresso*/
+@import url("/assents/css/ingresso/ingresso.css");
+@import url("/assents/css/ingresso/ingressoGerado.css");
+
+:root{
+   --roxo-boreal: #4650BD;
+   --cor-texto: #FFFFFF;
+   --fonte-titulo:'Calistoga';
+   --fonte-corpo: 'Raleway';
+   --hover-botao: #606ADA;
+   --verde-escuro: #008364;
+   --azul-claro: #C8DEEF;
+   --cinza: #444444;
+
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-image: linear-gradient(to bottom, #304968, #255f7f, #087692, #008d9e, #00a4a4, #00a7ab, #00aab3, #00adba, #009cc6, #0087cf, #006fce, #4650bd);
+   width: 100%;
+   /*width: 90vw;*/ /*não é recomendado colocar width para body*/
+}

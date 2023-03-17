@@ -1,0 +1,119 @@
+.container{
+   display: flex;
+   align-items: center;
+   margin: 32px 24px;
+   justify-content: space-between;
+   
+}
+.cabecalho{
+   background: var(--roxo-boreal);
+   /*display: flex;*/
+   position: relative;
+   width: 100%;
+}
+.container__imagem{
+   width: 70%;
+}
+
+.cabecalho__menu-hamburguer{
+   width: 30px;
+   height: 28px;
+   background-image: url("/assents/img/menu.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   display: inline-block;
+}
+
+.container__botao{
+   display: none;
+}
+
+.lista-menu {
+   display: none;
+   position: absolute;
+   text-align:  center;
+   top: 100%;
+   left: 47.3%;
+   width: 52.6%;
+   z-index: 1;
+}
+
+.container__botao:checked~.lista-menu {
+   display: block;
+}
+
+.lista-menu__item {
+   background-color: var(--roxo-boreal);
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.lista-menu__link{
+   color: var(--cor-texto);
+   text-decoration: none;
+   text-align: center;
+   font-family: var(--fonte-corpo);
+   font-size: 18px;
+   padding: 15px 20px;
+   border-bottom: solid 2px var(--cor-texto);
+}
+
+/*menu dektop e tablet*/
+.lista-menu-tablet-desktop, .lista-menu__item-TD{
+   display: none;
+}
+
+
+/*media screen de tablet*/
+@media screen and (min-width: 768px){
+   .cabecalho{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+   }
+   .container{
+      justify-content: center;
+   }
+   .container__imagem{
+      width: 100%;
+   }
+   .cabecalho__menu-hamburguer{
+      display: none;
+   }
+   .lista-menu-tablet-desktop, .lista-menu__item-TD{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+   .lista-menu__link-TD{
+      color: var(--cor-texto);
+      font-family: var(--fonte-corpo);
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 5px 20px 30px 20px;
+   }
+}
+
+/*media screen desktop*/
+@media screen and (min-width: 1400px){
+   .cabecalho{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .container{
+      justify-content: center;
+      margin-left: 85px;
+   }
+   .container__imagem{
+      width: 100%;
+   }
+   .lista-menu__link-TD{
+      padding: 12px;
+   }
+   .lista-menu-tablet-desktop{
+      margin-right: 85px;
+   }
+}

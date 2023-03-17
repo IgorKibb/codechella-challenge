@@ -1,0 +1,90 @@
+.descricao, .acessibilidade{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.acessibilidade-mulher, .sustentabilidade-saco, .atracoes-rodagigante{
+   width: 70%;
+   height: 260px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 1rem 1rem;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+   margin-top: 20px;
+}
+
+.titulo-descricao{
+   font-family: var(--fonte-corpo);
+   color: var(--cor-texto);
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 35px;
+   padding: 10px 0;
+}
+
+.paragrafo-descricao{
+   font-family: var(--fonte-corpo);
+   color: var(--cor-texto);
+   font-weight: 500;
+   padding: 5px 20px 65px 20px;
+   line-height: 32px;
+   font-size: 20px;
+}
+
+/*media screen de tablet*/
+@media screen and (min-width: 768px){
+   .acessibilidade-mulher, .sustentabilidade-saco, .atracoes-rodagigante{
+      width: 75%;
+      height: 320px;
+   }
+   .titulo-descricao{
+      margin: auto;
+      width: 100%;
+      margin-top: 20px;
+   }
+   .paragrafo-descricao{
+      width: 80%;
+      margin: auto;
+      line-height: 40px;
+   }
+}
+
+/*media screen desktop*/
+@media screen and (min-width: 1400px){
+   .descricao{
+      margin-top: 50px;
+   }
+   .acessibilidade, .sustentabilidade, .atracaoes{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      width: 90%;
+      margin-bottom: 100px;
+      align-items: center;
+   }
+   .sustentabilidade{
+      flex-direction: row-reverse;
+      gap: 20px;
+   }
+
+   .texto-descricao2{
+      width: 60%;
+      text-align: right;
+   }
+   .texto-descricao1, .texto-descricao3{
+      width: 60%;
+      text-align: left;
+   }
+   .acessibilidade-mulher, .sustentabilidade-saco, .atracoes-rodagigante{
+      width: 600px;
+      height: 380px;
+      
+   }
+   .paragrafo-descricao{
+      width: 100%;
+      margin: auto;
+      line-height: 40px;
+      padding: 0;
+   }
+}

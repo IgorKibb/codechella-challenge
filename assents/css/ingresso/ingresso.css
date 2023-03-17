@@ -1,0 +1,113 @@
+.ingresso{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 30px;
+}
+
+.texto-ingresso{
+   font-family: var(--fonte-titulo);
+   color: var(--cor-texto);
+   font-size: 32px;
+   font-weight: 400;
+   line-height: 40px;
+   padding: 25px 0 35px 0;
+   margin: 30px 0;
+   width: 80%;
+}
+
+.legenda-ingresso{
+   text-align: left;
+   color: var(--cor-texto);
+   font-size: 32px;
+   font-weight: 700;
+   font-family: var(--fonte-corpo);
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+.input{
+   width: 100%;
+   height: 30px;
+   font-size: 15px;
+   color: var(--cinza);
+   font-family: var(--fonte-corpo);
+   border: none;
+}
+
+.botao-formulario{
+   display: flex;
+   justify-content: space-around;
+   background-color: var(--roxo-boreal);
+   color: var(--cor-texto);
+   text-decoration: none;
+   width: 164px;
+   padding: 8px 6px;
+   margin: 25px auto;
+   font-family: var(--fonte-corpo);
+   font-weight: 700;
+   font-size: 20px;
+   border-radius: 1rem;
+   border: none;
+   box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.7);
+}
+
+/*media screen de tablet*/
+@media screen and (min-width: 768px){
+   .ingresso{
+      margin-top: 80px;
+      padding-top: 20px;
+   }
+   .texto-ingresso{
+      font-size: 40px;
+      width: 70%;
+   }
+   .formulario-ingresso{
+      width: 80%;
+   }
+   .nascimento{
+      display: flex;
+      justify-items: left;
+   }
+   #nascimento{
+      width: 70%;
+      justify-content: left;
+   }
+}
+
+/*media screen desktop*/
+@media screen and (min-width: 1400px){
+   .texto-ingresso{
+      font-size: 48px;
+      width: 100%;
+   }
+   .formulario-ingresso{
+      width: 55%;
+   }
+   /*.cpf-data{
+      display: flex;
+      justify-content: space-between;
+   }
+   .input{
+      height: 40px;
+   }
+   #nacismento{
+      width: 100%;
+   }*/
+   .cpf-data{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+   .input{
+      height: 40px;
+   }
+   #cpf{
+      width: 380px;
+   }
+   #nascimento{
+      width: 380px;
+      justify-content: left;
+   }
+}
