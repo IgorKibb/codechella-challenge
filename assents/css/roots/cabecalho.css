@@ -57,6 +57,9 @@
    padding: 15px 20px;
    border-bottom: solid 2px var(--cor-texto);
 }
+.last{
+   border: none;
+}
 
 /*menu dektop e tablet*/
 .lista-menu-tablet-desktop, .lista-menu__item-TD{
