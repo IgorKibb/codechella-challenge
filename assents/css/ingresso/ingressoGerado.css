@@ -61,3 +61,50 @@
    margin: 20px 0;
    text-align: center;
 }
+
+
+/*media screen de tablet*/
+@media screen and (min-width: 768px){
+   .ingresso_Impresso{
+      margin-top: 120px;
+   }
+   .ingressoGerado-chamada{
+      width: 70%;
+   }
+   .ingresso-qrcode{
+      height: 620px;
+   }
+   .logo-ingresso{
+      margin-right: 120px;
+   }
+   .logo-ingresso-final{
+      margin-left: 120px;
+   }
+   .qr-code{
+      width: 55%;
+   }
+}
+
+/*media screen desktop*/
+@media screen and (min-width: 1400px){
+   .ingressoGerado-chamada{
+      font-weight: 500;
+      font-size: 40px;
+      width: 55%;
+   }
+   .ingresso-qrcode{
+      width: 740px;
+      height: 350px;
+   }
+   .ingresso-informacoes{
+      display: flex;
+      flex-direction: row;
+   }
+   .qr-code{
+      width: 40%;
+      height: 40%;
+   }
+   .ingresso-informacoes-texto{
+      text-align: right;
+   }
+}

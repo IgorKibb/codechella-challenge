@@ -51,7 +51,7 @@
 .conteudo-paragrafo{
    position: relative;
    background: var(--azul-claro);
-   font: 20px;
+   font-size: 20px;
    line-height: 32px;;
    color: var(--cinza);
    font-family: var(--fonte-corpo);
@@ -65,4 +65,24 @@
 .conteudo-box.active .conteudo-paragrafo{
    height: 150px;
    padding: 10px 20px 15px 10px;
+}
+
+/*media screen de tablet*/
+@media screen and (min-width: 768px){
+   .informacoes{
+      margin-top: 120px;
+   }
+   .titulo-according{
+      font-size: 42px;
+   }
+   .titulo-label{
+      font-weight: 700;
+   }
+}
+
+/*media screen desktop*/
+@media screen and (min-width: 1400px){
+   .accordion-box{
+      width: 75%;
+   }
 }
